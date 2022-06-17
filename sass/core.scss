@@ -1,0 +1,412 @@
+@import "mixins-master";
+@import "core/index";
+
+/**
+ * 	Global Styling
+ * 	Remains same throughout the website
+ *	----------------------------------------
+ */
+
+body{
+	position: relative;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+
+	&.no-scroll{
+		overflow: hidden;
+	}
+}
+
+img{ @include img-properties; }
+ul{ @include ul-properties; }
+a.button, .button{ @include button-properties; }
+p.center{ max-width: 960px; margin: 0 auto; }
+
+/**
+ *	Breadcrumbs
+ *	----------------
+ */
+
+ .breadcrumbs{
+ 	max-width: 1170px;
+ 	padding: 24px 12px;
+ 	margin: 0 auto;
+ 	font-family: $font-main;
+ 	font-size: 13px;
+ 	line-height: map-get($line-height-map,sm);
+ 	color: #232c37;
+ 	text-transform: capitalize;
+ 	text-align: left;
+
+ 	ul{
+ 		display: flex;
+
+ 		li{
+ 			transition: $transition;
+
+ 			span{
+ 				margin-left: 15px;
+ 			}
+
+ 			&:last-child span{
+ 				display: none;
+ 			}
+
+ 			&:hover{
+ 				font-weight: 600;
+ 			}
+ 		}
+
+ 		li+li{
+ 			margin-left: 15px;
+ 		}
+ 	}
+ }
+
+ /**
+ *	Featured Image Banner
+ *	--------------------------
+ */
+
+ .featured-image-banner{
+	@include background-properties;
+	@include flex(center);
+	padding: 15px 0;
+	min-height: 400px;
+	text-align: center;
+
+	.breadcrumbs ul{
+		justify-content: center;
+	}
+}
+
+/*
+ * Description Section on Internal Pages
+ * ------------------------------------------
+ */
+
+.item-description{
+	figure{
+		margin: 0;
+		img{
+			margin: 0 auto;
+		}
+	}
+
+	p + p{ margin-top: 30px; }
+}
+
+/**
+ *	Case Study Slider
+ *	----------------------
+ */
+
+.case-slider{
+	@include slick-slider-properties(calc(50% - 20px), -90px, -90px);
+
+	.slick-track{
+		display: flex;
+	}
+
+	.case-study{
+		@include flex($horizontal-align: flex-end);
+		cursor: grab;
+		height: inherit;
+
+		img{
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	
+		> div{
+			@include flex($horizontal-align: center);
+			flex-direction: column;
+			background-color: rgba(101, 101, 102, 0.8);
+			padding: 70px;
+			width: 50%;
+			z-index: 1;
+	
+			h4,h2,p{
+				color: #fff;
+				margin-bottom: 35px;
+			}
+
+			.button{
+				margin-top: 35px;
+			}
+
+			.content :last-child{
+				margin-bottom: 0
+			}
+		}
+	}
+}
+
+.logo-slider-wrap{
+	margin-top: 30px;
+
+	.logo-slider{
+		@include slick-slider-properties(calc(50% - 23px), 0px, 0px);
+
+		.slick-track{
+			@include flex($vertical-align: center);
+			margin: 0 auto;
+		}
+
+		li{
+			img{
+				filter: grayscale(100%);
+				max-width: 200px;
+				cursor: pointer;
+				margin: 0 auto;
+			}	
+		}
+
+		li.slick-current{
+			img{
+				filter: grayscale(0%);
+			}
+		}
+	}
+}
+
+/**
+ * 	1. Child Product Slider on Product Single Page
+ * 	2. Application Slider on Product Single Page
+ * 	3. Product Slider on Applications Single Page
+ *	----------------------------------------------------
+ */
+
+.slick-carousel{
+	@include slick-slider-properties(calc(50% - 55px), -75px, -75px);
+	margin: 0 auto;
+
+	&.product-application-slider .slick-slide img{
+		width: 100%;
+	}
+
+	a.button{
+		margin-top: 25px;
+	}
+
+	.slick-list{
+		margin: 0 -15px;
+	}
+
+	.slick-slide{
+		text-align: center;
+		position: relative;
+		padding: 0 15px;
+
+		img{
+			margin: 0 auto;
+		}
+	}
+}
+
+/**
+ *	Content in Quote Gravity Form Section
+ *	-------------------------------------------
+ */
+
+.quote-gravity-form{
+	.acf-expertise-block{
+		h4{
+			margin-bottom: 0;
+			font-size: 0.938rem;
+			font-size: map-get($font-size-map,sm);
+			line-height: map-get($line-height-map,sm);
+		}
+	}
+}
+
+/**
+ *	File Download Subscription Form Section
+ *  --------------------------------------------
+ */
+
+ #light-box{
+ 	display: none;
+ 	align-items: center;
+	position: fixed;
+    top: 0; bottom: 0;
+    right: 0; left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 100;
+
+    .content-wrapper{
+    	max-width: 400px;
+    	margin: auto;
+    	position: relative;
+    }
+
+    #close{
+    	position: absolute;
+    	right: 10px; top: 10px;
+    	cursor: pointer;
+
+    	.fas{
+    		color: #3892df;
+    	}
+    } 	
+ }
+
+/**
+ *	Responsive Styles
+ *	----------------------
+ */
+
+@media (min-width: 1025px){
+ 	.item-description{
+ 		.hide-on-desktop{
+ 			display: none;
+ 		}
+ 	}
+}
+
+@media (min-width: 1200px){
+	.container{max-width: 1170px;}
+}
+
+@media (max-width: 1365px){
+	//case-study logo slider
+	.logo-slider-wrap{
+		.logo-slider{
+			.slick-list{
+				max-width: 90%;
+				margin: 0 auto;
+			}
+
+			li img{
+				margin: 0 auto;
+			}
+		}
+	}
+
+	//slick-slider
+	.slick-carousel{ width: 85%; }
+}
+
+@media(max-width: 1024px){
+	//case-study slider
+	.case-slider{
+		.case-study{
+			div{
+				width: 100%;
+			}
+		}
+	}
+
+	//Gravity Forms - Request a Quote
+	.contact-us-form-section{
+		.kt-row-column-wrap {
+ 	 		align-items: flex-start;
+		}
+
+		.automation-expert{
+    		h2, p{
+    			text-align: center;
+    		}
+		}
+	}
+
+
+ //	Reusable Block "Description" CSS
+ 
+ 	.item-description{
+ 		.show-on-desktop{
+ 			display: none;
+ 		}
+ 	}
+}
+
+@media (max-width: 991px){
+	//slick-slider
+	.slick-carousel{ width: 75%; }
+}
+
+@media (max-width: 767px){
+	//case-study logo slider
+	.logo-slider-wrap{
+		padding: 0 12px;
+
+		.logo-slider{
+			svg{
+				top: 9px;
+			}
+		}
+
+		.lnkbtn{
+			margin-top: 30px;
+		}
+	}
+
+	//slick-slider
+	.slick-carousel{
+		width: 100%;
+
+		&.application-product-slider,
+		&.child-product-slider,
+		&.product-application-slider{
+			margin-top: 60px;
+
+			svg{
+				top: -60px;
+			}
+
+			svg#arrow-left{
+				left: initial;
+				right: 60px;
+			}
+
+			svg#arrow-right{
+				right: 0;
+			}
+		}
+
+		&.card-slider{
+			svg#arrow-left{
+				left: 15px;
+			}
+
+			svg#arrow-right{
+				right: 15px;
+			}
+		}
+	}
+}
+
+@media(max-width: 576px){
+	//case-study slider
+	.case-slider{
+		.case-study{
+			> div{
+				padding: 30px;
+				text-align: center;
+			}
+		}
+	}
+
+	.featured-image-banner{
+		min-height: 350px;
+	}
+}
+
+@media(max-width: 479px){
+	.slick-carousel svg,
+	.acf-slider-block svg{
+		width: 40px;
+		height: 40px;
+	}
+
+	.slick-carousel.card-slider svg#arrow-left{
+		left: 0;
+	}
+
+	.slick-carousel.card-slider svg#arrow-right{
+		right: 0;
+	}
+}

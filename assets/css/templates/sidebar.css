@@ -1,0 +1,140 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+/**
+ * Mobile Sidebar Toggle Button
+ * ---------------------------------
+ */
+.mobile-sidebar-button {
+  margin-bottom: 20px; }
+  .mobile-sidebar-button a {
+    display: flex;
+    align-items: center; }
+    .mobile-sidebar-button a span {
+      width: 17px;
+      height: 2px;
+      margin: 2px 0;
+      background-color: #2b4d6c;
+      display: block;
+      transition: all 300ms ease-in-out; }
+      .mobile-sidebar-button a span:nth-child(odd) {
+        width: 10px; }
+    .mobile-sidebar-button a label {
+      margin-left: 10px;
+      font-size: 1.125rem;
+      font-family: "Kumbh Sans";
+      font-weight: bold;
+      color: #2b4d6c;
+      cursor: pointer; }
+    .mobile-sidebar-button a.active span:nth-child(odd) {
+      width: 17px; }
+
+/**
+ * Both Desktop & Mobile Sidebar Styles
+ * -----------------------------------------
+ */
+[class*="sidebar"] aside#secondary > div + div {
+  margin-top: 50px; }
+[class*="sidebar"] aside#secondary h4.sidebar-title {
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+[class*="sidebar"] aside#secondary ul li {
+  display: flex;
+  font-size: 0.938rem;
+  font-family: "Kumbh Sans";
+  font-weight: bold; }
+  [class*="sidebar"] aside#secondary ul li img {
+    margin-right: 20px; }
+[class*="sidebar"] aside#secondary .widget_recent_entries ul li + li {
+  margin-top: 20px; }
+[class*="sidebar"] aside#secondary .widget_categories ul li + li {
+  margin-top: 15px; }
+[class*="sidebar"] aside#secondary .gform_widget .gform_wrapper {
+  background-color: #d6e9f8;
+  padding: 20px; }
+  [class*="sidebar"] aside#secondary .gform_widget .gform_wrapper input:not([type="submit"]) {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1rem;
+    color: #245f91;
+    background-color: #fff;
+    line-height: 12px !important; }
+    [class*="sidebar"] aside#secondary .gform_widget .gform_wrapper input:not([type="submit"])::placeholder {
+      color: #245f91;
+      font-size: 0.938rem;
+      line-height: 26px;
+      font-family: "Open Sans"; }
+    [class*="sidebar"] aside#secondary .gform_widget .gform_wrapper input:not([type="submit"]):focus {
+      border-color: #245f91; }
+  [class*="sidebar"] aside#secondary .gform_widget .gform_wrapper input[type="submit"] {
+    width: 100%;
+    margin: 0;
+    line-height: 16px !important; }
+  [class*="sidebar"] aside#secondary .gform_widget .gform_wrapper .gform_footer {
+    padding: 0;
+    margin: 10px 0 0 0; }
+
+/**
+ * Desktop Sidebar Styles
+ * ---------------------------
+ */
+.desktop-sidebar {
+  min-width: 344px; }
+  .desktop-sidebar aside#secondary h4.sidebar-title {
+    color: #232c37;
+    border-bottom: 1px solid #d8d8d8; }
+  .desktop-sidebar aside#secondary ul li {
+    color: #2b4d6c; }
+
+/**
+ * Mobile Sidebar Styles
+ * ---------------------------
+ */
+.mobile-sidebar {
+  background-color: #245f92;
+  padding: 50px 30px;
+  max-width: 320px;
+  position: absolute;
+  top: 233px;
+  left: -425px;
+  z-index: 1;
+  transition: all 300ms ease-in-out; }
+  .mobile-sidebar h4.sidebar-title {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .mobile-sidebar ul li {
+    color: #fff; }
+  .mobile-sidebar.open {
+    left: 0; }
+  .mobile-sidebar .gform_confirmation_message {
+    color: #fff; }
+
+/**
+ * Respinsive
+ * ---------------
+ */
+@media (max-width: 991px) {
+  .mobile-sidebar {
+    top: 242px; } }
+@media (max-width: 767px) {
+  .mobile-sidebar {
+    top: 238px; } }
+@media (max-width: 575px) {
+  .mobile-sidebar {
+    top: 246px; } }
+
+/*# sourceMappingURL=sidebar.css.map */

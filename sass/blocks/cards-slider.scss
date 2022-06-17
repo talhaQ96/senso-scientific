@@ -1,0 +1,8 @@
+@import "../mixins-master";
+
+.acf-cards-slider{
+	.wrapper{
+		@include card-styles;
+		padding: 40px 30px;
+	}
+}

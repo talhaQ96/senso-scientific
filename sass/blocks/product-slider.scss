@@ -1,0 +1,53 @@
+@import "../mixins-master";
+
+.acf-product-slider{
+	@include slick-slider-properties(calc(50% - 20px), -50px, -50px);
+	img{
+		margin: 0 auto;
+	}
+	.product-slider{
+		img{
+			cursor: grab;
+		}
+	}
+
+	.product-thumb-slider{
+		max-width: 250px;
+		margin: 40px auto 0;
+
+		li.slick-current, li:hover{
+			img{
+				border: 1px solid $c-orange;
+			}
+		}
+
+		img{
+			max-width: 100px;
+			cursor: pointer;
+			padding: 5px 10px;
+		}
+	}
+}
+
+@media (min-width: 575px){
+	.acf-product-slider{
+		.product-thumb-slider{
+			max-width: 350px;
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.acf-product-slider{
+		.product-thumb-slider{
+			max-width: 450px;
+		}
+	}
+}
+
+@media (max-width: 374px){
+	.acf-product-slider{
+		svg#arrow-left { left:  -35px; }
+		svg#arrow-right{ right: -35px; }
+	}
+}

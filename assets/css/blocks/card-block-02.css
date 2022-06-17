@@ -1,0 +1,36 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-card-block-02 {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  display: block; }
+  .acf-card-block-02 .icon-wrapper {
+    min-height: 160px; }
+    .acf-card-block-02 .icon-wrapper img {
+      margin: 0 auto;
+      max-height: 130px; }
+  .acf-card-block-02.card-with-hover {
+    background-color: #f9fafa;
+    transition: all 300ms ease-in-out; }
+    .acf-card-block-02.card-with-hover h4, .acf-card-block-02.card-with-hover p {
+      transition: all 300ms ease-in-out; }
+    .acf-card-block-02.card-with-hover:hover {
+      background-color: #3892df; }
+      .acf-card-block-02.card-with-hover:hover h4, .acf-card-block-02.card-with-hover:hover p {
+        color: #fff; }
+
+/*# sourceMappingURL=card-block-02.css.map */

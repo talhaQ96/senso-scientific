@@ -1,0 +1,13 @@
+.not-found{
+	padding: 60px 0;
+
+	.button{
+		margin-top: 35px;
+	}
+}
+
+@media (min-width: 1024px){
+	.not-found{
+		padding: 90px 0;
+	}
+}

@@ -1,0 +1,312 @@
+/**
+ *	Search Form Global Styling
+ *	-------------------------------
+ */
+
+.search-form{
+	border-radius: 4px;
+	font-size: map-get($font-size-map, xs);
+
+	input{
+		border: 0;
+		background-color: transparent;
+
+		color: $c-text;
+
+		&::placeholder{
+			color: $c-text;
+		}
+
+		&:focus{
+			outline: none;
+		}
+	}
+}
+
+/**
+ *	Search Form in Header
+ *	---------------------------
+ */
+
+.top-nav{
+	.search-form{
+		width: 218px;
+		background-color: #fff;
+		border: 1px solid #e9eaea;
+
+		button{
+			width: 32px;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			color: $c-text;
+		}
+
+		input{
+			font-family: $font-main;
+			font-size: map-get($font-size-map, xs);
+			padding: 8px 0;
+			width: calc(100% - 45px);
+		}
+	}
+}
+
+/**
+ *	Search Form in Archive Pages & Sidebar
+ *	-------------------------------------------
+ */
+
+aside.widget-area, .not-found{
+	.search-form{
+		border: 1px solid #d8d8d8;
+		background-color: #f9fafa;
+		max-width: 320px;
+
+		input{
+			width: 100%;
+			padding: 10px 22px;
+		}
+				
+		button{
+			display: none;
+		}
+	}
+}
+
+.not-found .search-form{
+	margin: 35px auto 0;
+}
+
+/**
+ *	Gravity Forms - Subscription Form - File Download
+ *	------------------------------------------------------
+ */
+.form-download-file_wrapper{
+	padding: 50px 30px 14px;
+
+	@include gravity-form(
+		$background-color: #e1effa,
+		$field-bg-color: #f9fafa,
+		$btn-bg-color: #3892df,
+		$btn-text-color: #fff,
+		$h-btn-bg-color: $c-brand,
+		$text-color: #2b4d6c
+	);
+
+	h2{
+		margin-bottom: 0;
+	}
+
+	span.gform_description{
+		display: block;
+		margin-bottom: 30px;
+	}
+}
+
+.form-download-file.gform_confirmation_wrapper{
+	background-color: #e1effa;
+	color: #2b4d6c;
+	padding: 30px;
+
+	.newsletterform_response a{
+		font-weight: bold;
+		border-bottom: 2px solid;
+	}
+}
+
+/**
+ *	Gravity Forms - Request a Quote
+ *	------------------------------------
+ */
+
+.contact-us-form-section{
+	h4{
+		font-size: map-get($font-size-map, sm);
+	}
+}
+
+.home .contact-us-form_wrapper,
+.single-applications .contact-us-form_wrapper,
+.page .contact-us-form_wrapper{
+	@include gravity-form(
+		$background-color: #3892df,
+		$field-bg-color: #60a8e5,
+		$btn-bg-color: #fff,
+		$btn-text-color: #60a8e5,
+		$h-btn-bg-color: #e1effa,
+		$text-color: #fff);
+}
+
+.single-products .contact-us-form_wrapper{
+	@include gravity-form(
+		$background-color: #e1effa,
+		$field-bg-color: #f9fafa,
+		$btn-bg-color: #3892df,
+		$btn-text-color: #fff,
+		$h-btn-bg-color: $c-brand,
+		$text-color: #2b4d6c
+	);
+}
+
+.contact-us-form_wrapper{
+	padding: 50px 40px 65px;
+
+	p.gform_required_legend{
+		position: absolute;
+		bottom: 45px;
+		font-size: map-get($font-size-map, sm);
+	}
+
+	.name_last{ display: none; }
+
+  	.select-dropdown{
+  		position: relative;
+
+  		&:after{
+    		content:"\f078";
+    		font-family: "Font Awesome 5 Free";
+    		font-weight: 700;
+    		font-size: 14px;
+    		padding: 14px 8px;
+    		position: absolute; right: 6px; top: 0;
+    		z-index: 1;
+    		text-align: center;
+    		width: 10%;
+    		height: 100%;      
+    		pointer-events: none;
+    		box-sizing: border-box;   
+  		}
+  	}
+
+	select{
+		position: relative;
+		cursor: pointer;
+		font-size: map-get($font-size-map, sm) !important;
+    	-webkit-appearance: none;
+    	   -moz-appearance: none;
+  		        appearance: none;
+  	} 
+
+  	.free-trial{
+  		display: flex !important;
+  		width: 85%;
+
+  		legend{
+  			font-weight: normal !important;
+  			margin: 0 !important;
+  		}
+
+  		.gfield_radio{
+  			display: flex;
+  			margin-left: 25px;
+
+  			.gchoice + .gchoice{
+  				margin-left: 50px;
+  			}
+
+  			input{
+  				display: none;
+  			}
+
+  			label{
+  				position: relative;
+  				display: block !important;
+  				cursor: pointer;
+
+  				&:before{
+			  		content: "";
+			  		display: inline-block;
+			  		position: absolute;
+			  		top: 4px;
+			  		left: -25px;
+			  		width: 15px;
+			  		height: 15px;
+			  		border-radius: 50%;
+  				}
+  			}
+  		}
+  	}
+}
+
+.contact-us-form.gform_confirmation_wrapper{
+	.gform_confirmation_message{
+		padding: 50px 30px;
+		border-radius: 2px;
+		background-color: #3892df;
+		color: #fff;
+	}
+}
+
+.single-products{
+	.contact-us-form.gform_confirmation_wrapper{
+		.gform_confirmation_message{
+			background-color: #e1effa;
+			color: #2b4d6c;
+		}
+	}
+}
+
+/**
+ *	Responsive Styles
+ *	----------------------
+ */
+ 
+@media(max-width: 641px){
+	//Gravity Forms - Request a Quote
+	.contact-us-form_wrapper{
+		padding: 50px 30px 65px;
+
+		.gform_title{
+			text-align: center;
+		}
+
+		form{
+			.ginput_complex span{
+				margin-bottom: 16px;
+			}
+
+			input{
+				line-height: 12px !important;
+			}
+
+			input[type="submit"]{
+				max-width: 185px;
+				margin: 0 auto !important;
+				line-height: 16px !important;
+			}
+
+			.gform_footer{
+				display: flex;
+			}
+		}
+	}
+}
+
+@media(max-width: 480px){
+	//Gravity Forms - Request a Quote
+	.contact-us-form_wrapper{
+		padding: 50px 10px 65px;
+	}
+
+	.free-trial{
+		width: 100%;
+		flex-direction: column;
+
+		.gfield_radio{
+			margin-top: 16px;
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 640px){
+	.contact-us-form_wrapper{
+		.gform_fields{
+			grid-column-gap: 2% !important;
+		}
+
+		.gfield--width-half{
+			-ms-grid-column-span: 6 !important;
+    			grid-column: span 6 !important;
+		} 
+	}
+}

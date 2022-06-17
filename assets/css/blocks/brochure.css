@@ -1,0 +1,21 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-brochure-block h2, .acf-brochure-block p {
+  color: #fff; }
+.acf-brochure-block a.button {
+  margin-top: 35px; }
+
+/*# sourceMappingURL=brochure.css.map */

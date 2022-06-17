@@ -1,0 +1,94 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.single-post .attachment-post-thumbnail {
+  width: 100%; }
+.single-post .sharethis-inline-share-buttons#st-1 {
+  display: flex;
+  margin-bottom: 24px; }
+  .single-post .sharethis-inline-share-buttons#st-1 .st-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #ec7600;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0; }
+    .single-post .sharethis-inline-share-buttons#st-1 .st-btn > img {
+      position: initial;
+      height: 24px;
+      width: 24px; }
+    .single-post .sharethis-inline-share-buttons#st-1 .st-btn + .st-btn {
+      margin: 0 0 0 15px; }
+.single-post .sec-blog {
+  padding-bottom: 30px; }
+  .single-post .sec-blog .blog-details {
+    position: relative;
+    margin: 40px 0; }
+    .single-post .sec-blog .blog-details p {
+      font-size: 0.938rem; }
+    .single-post .sec-blog .blog-details ul.post-categories {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.938rem;
+      font-family: "Kumbh Sans";
+      font-weight: bold;
+      color: #ec7600; }
+      .single-post .sec-blog .blog-details ul.post-categories li {
+        position: relative; }
+        .single-post .sec-blog .blog-details ul.post-categories li:after {
+          content: ",";
+          position: relative;
+          left: 3px; }
+        .single-post .sec-blog .blog-details ul.post-categories li:only-child:after, .single-post .sec-blog .blog-details ul.post-categories li:last-child:after {
+          content: ""; }
+      .single-post .sec-blog .blog-details ul.post-categories li + li {
+        margin-left: 15px; }
+  .single-post .sec-blog .blog-content .st-inline-share-buttons {
+    display: none !important; }
+  .single-post .sec-blog .blog-content > * {
+    margin-bottom: 30px; }
+  .single-post .sec-blog .blog-content ul, .single-post .sec-blog .blog-content ol {
+    list-style-type: disc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px; }
+    .single-post .sec-blog .blog-content ul li > a, .single-post .sec-blog .blog-content ol li > a {
+      font-weight: bold;
+      color: #245f92; }
+  .single-post .sec-blog .blog-content ul {
+    list-style-type: disc; }
+  .single-post .sec-blog .blog-content ol {
+    list-style-type: decimal; }
+  .single-post .sec-blog .blog-content blockquote {
+    border-left: 8px solid #ec7600;
+    padding-left: 30px; }
+    .single-post .sec-blog .blog-content blockquote p {
+      font-size: 1.125rem;
+      line-height: 28px; }
+
+@media (min-width: 1024px) {
+  .single-post .sec-blog {
+    padding-bottom: 60px; } }
+@media (min-width: 1366px) {
+  .single-post .sharethis-inline-share-buttons#st-1 {
+    flex-direction: column;
+    position: absolute;
+    left: -75px; }
+    .single-post .sharethis-inline-share-buttons#st-1 .st-btn + .st-btn {
+      margin: 15px 0 0 0; } }
+
+/*# sourceMappingURL=single.css.map */

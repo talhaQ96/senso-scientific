@@ -1,0 +1,53 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+a.link-solutions {
+  display: block;
+  transition: all 300ms ease-in-out; }
+  a.link-solutions:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; }
+
+.acf-solutions-block {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  position: relative; }
+  .acf-solutions-block div.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5; }
+  .acf-solutions-block div {
+    padding: 50px;
+    z-index: 1; }
+    .acf-solutions-block div h4 {
+      font-family: "Open Sans";
+      font-weight: 600; }
+
+@media (max-width: 767px) {
+  .acf-solutions-block {
+    align-items: center;
+    text-align: center; }
+    .acf-solutions-block div {
+      padding: 35px; } }
+
+/*# sourceMappingURL=solutions.css.map */

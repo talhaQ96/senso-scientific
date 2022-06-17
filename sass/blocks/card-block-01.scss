@@ -1,0 +1,6 @@
+@import "../mixins-master";
+
+.acf-card-block-01{
+	@include card-styles;
+	padding: 25px;
+}

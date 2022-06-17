@@ -1,0 +1,48 @@
+@import "../mixins-master";
+
+a.link-solutions{
+	display: block;
+	transition: $transition;
+
+	&:hover{
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	}
+}
+
+.acf-solutions-block{
+	@include background-properties;
+	min-height: 350px;
+	border-radius: 2px;
+	display: flex;
+	align-items: flex-end;
+	color: $c-white;
+	position: relative;
+
+	div.overlay{
+		position: absolute;
+		top: 0; bottom: 0;
+		right: 0; left: 0;
+		opacity: 0.5;
+	}
+
+	div{
+		padding: 50px;
+		z-index: 1;
+
+		h4{
+			font-family: $font-main;
+			font-weight: 600;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.acf-solutions-block{
+		align-items: center;
+		text-align: center;
+
+		div{
+			padding: 35px;
+		}
+	}
+}

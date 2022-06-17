@@ -1,0 +1,43 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-icons-grid-block ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .acf-icons-grid-block ul li {
+    display: flex;
+    align-items: center;
+    width: 120px; }
+    .acf-icons-grid-block ul li img {
+      max-width: 120px;
+      max-height: 100px; }
+
+@media (min-width: 992px) {
+  .acf-icons-grid-block ul li:nth-child(n+8) {
+    margin-top: 25px; }
+  .acf-icons-grid-block ul li:not(:nth-child(7n)) {
+    margin-right: 20px; } }
+@media (min-width: 1200px) {
+  .acf-icons-grid-block ul li:not(:nth-child(7n)) {
+    margin-right: 50px; } }
+@media (max-width: 991px) {
+  .acf-icons-grid-block ul li {
+    gap: 25px 20px; } }
+@media (max-width: 575px) {
+  .acf-icons-grid-block ul li img {
+    max-width: 95px; } }
+
+/*# sourceMappingURL=icons-grid.css.map */

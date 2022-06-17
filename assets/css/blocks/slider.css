@@ -1,0 +1,67 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-slider-block svg {
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 46px);
+  transition: all 300ms ease-in-out; }
+  .acf-slider-block svg#arrow-right {
+    right: 0; }
+  .acf-slider-block svg#arrow-left {
+    left: 0; }
+  .acf-slider-block svg:hover .cls-1, .acf-slider-block svg:hover .cls-2 {
+    fill: #ec7600; }
+.acf-slider-block .slick-dots {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .acf-slider-block .slick-dots li {
+    display: inline;
+    line-height: 0;
+    margin-top: 35px; }
+    .acf-slider-block .slick-dots li:only-child {
+      display: none; }
+  .acf-slider-block .slick-dots li + li {
+    margin-left: 8px; }
+  .acf-slider-block .slick-dots button {
+    background-color: #929496;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    border-width: 0px; }
+  .acf-slider-block .slick-dots .slick-active button {
+    background-color: #3892df; }
+.acf-slider-block .container {
+  padding: 0; }
+.acf-slider-block .slick-list {
+  max-width: 90%;
+  margin: 0 auto; }
+.acf-slider-block .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+.acf-slider-block img {
+  margin: 0 auto;
+  max-width: 200px; }
+
+/*# sourceMappingURL=slider.css.map */

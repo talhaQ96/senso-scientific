@@ -1,0 +1,83 @@
+@import "../mixins-master";
+
+.single-products{
+	.acf-button-block a{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.product-application-slider{
+		.slick-slide{
+			a{
+				display: block;
+				position: relative;
+
+				h4{
+					position: absolute;
+					bottom: 20px;
+					width: 100%;
+					margin-bottom: 0;
+					color: $c-white;
+					text-align: center;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 480px){
+	.single-products{
+		.acf-button-block a.button{
+			min-width: 400px;
+		}
+	}
+}
+
+@media (min-width: 1025px){
+	.single-products{
+		.product-working{ 
+			.wp-block-kadence-column + .wp-block-kadence-column{
+				.acf-card-block-02{
+					&:before{
+						content: "";
+						position: absolute;
+						left: -30px; top: 40px;
+						width: 25px;
+						height: 50px;
+						background-image: url(../../images/flow.svg);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.single-products{
+		.product-description{
+			text-align: center;
+		}
+		
+		.acf-button-block a.button{
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 479px){
+	.single-products{
+		.acf-button-block a.button{
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 374px){
+	.single-products{
+		.acf-button-block a.button{
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@import "../mixins-master";
+
+.acf-button-block{
+	a.button{
+		@include button-properties;
+	}
+}

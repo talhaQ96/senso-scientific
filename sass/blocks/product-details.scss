@@ -1,0 +1,85 @@
+@import "../mixins-master";
+
+.acf-product-details{
+	ul{
+		@include flex();
+		font-size: map-get($font-size-map, lg);
+		font-family: $font-alt;
+		font-weight: bold;
+		line-height: map-get($line-height-map, sm);
+		color: $c-text;
+		border-bottom: 1px solid #E9EAEA;
+		padding-bottom: 15px;
+
+		li{
+			cursor: pointer;
+
+				&.active{
+				color: #3892df;
+				position: relative;
+
+				&:after{
+					content: "";
+					position: absolute;
+					bottom: -15px;
+					left: 0;
+					width: 100%;
+					height: 3px;
+					background-color: #3892df;
+				}
+			}
+		}
+
+		li+li{
+			margin-left: 50px;
+		}
+	}
+
+	.description{
+		display: none;
+		margin-top: 40px;
+
+		p+p{
+			margin-left: 80px;
+		}
+
+		&.active{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+.acf-product-details-mobile{
+	> div{
+		border-bottom: 1px solid #E9EAEA;
+	}
+
+	h4{
+		margin: 0;
+		padding: 15px;
+		line-height: initial;
+		cursor: pointer;
+		position: relative;
+
+		&:after{
+			content: "\f067";
+			font-family:"Font Awesome 5 Free";
+			position: absolute;
+			right: 15px;
+		}
+
+		&.dropdown:after{
+			content: "\f068";
+		}
+	}
+
+	.content{
+		display: none;
+		padding: 0 15px 15px;
+
+		p+p{
+			margin-top: 15px;
+		}
+	}
+}

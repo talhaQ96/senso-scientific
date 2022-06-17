@@ -1,0 +1,180 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.archive .content {
+  padding: 60px 0; }
+.archive .featured-image-banner.primary-banner {
+  background-image: url(../../images/blue-bg.png);
+  min-height: 300px; }
+  .archive .featured-image-banner.primary-banner .breadcrumbs {
+    color: #fff; }
+  .archive .featured-image-banner.primary-banner h1, .archive .featured-image-banner.primary-banner p {
+    color: #fff; }
+.archive .post-grid [class*="col-"] {
+  padding: 0 15px; }
+  .archive .post-grid [class*="col-"]:nth-child(n+3) {
+    margin-top: 50px; }
+.archive .post-grid .post-wrapper {
+  background-color: #f9fafa;
+  height: 100%; }
+  .archive .post-grid .post-wrapper a.featured-image {
+    display: block; }
+    .archive .post-grid .post-wrapper a.featured-image img {
+      width: 100%; }
+  .archive .post-grid .post-wrapper .post-inner {
+    padding: 30px; }
+    .archive .post-grid .post-wrapper .post-inner p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+  .archive .post-grid .post-wrapper .button {
+    margin-top: 25px; }
+.archive .products-grid [class*=" col-"]:nth-child(n+4) {
+  margin-top: 50px; }
+.archive .products-grid .product-wrapper {
+  text-align: center; }
+  .archive .products-grid .product-wrapper img {
+    margin: 0 auto; }
+.archive ul.filter-buttons {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px; }
+  .archive ul.filter-buttons li {
+    min-width: 120px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #ec7600;
+    border-color: #ec7600; }
+    .archive ul.filter-buttons li:hover, .archive ul.filter-buttons li.active {
+      background-color: #ec7600;
+      color: #fff; }
+    .archive ul.filter-buttons li:only-child {
+      display: none; }
+.archive .search-results-wrapper {
+  display: none; }
+  .archive .search-results-wrapper.active {
+    display: block; }
+.archive .pagination {
+  margin-top: 50px; }
+  .archive .pagination a, .archive .pagination .page-numbers {
+    background-color: #ec7600;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.938rem;
+    font-family: "Kumbh Sans";
+    line-height: 16px;
+    padding: 15px 15px 11px;
+    min-width: 165px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color: #ec7600;
+    border-color: #ec7600;
+    background-color: #fff;
+    min-width: initial;
+    transition: all 300ms ease-in-out; }
+    .archive .pagination a:hover, .archive .pagination .page-numbers:hover {
+      background-color: #e88d32; }
+    .archive .pagination a.noradius-left, .archive .pagination .page-numbers.noradius-left {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .archive .pagination a.noradius-right, .archive .pagination .page-numbers.noradius-right {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .archive .pagination a.small, .archive .pagination .page-numbers.small {
+      font-size: 0.875rem;
+      padding: 10px 18px 7px;
+      min-width: initial; }
+    .archive .pagination a.transparent-button, .archive .pagination .page-numbers.transparent-button {
+      background-color: transparent;
+      color: #ec7600;
+      border-color: #ec7600; }
+      .archive .pagination a.transparent-button:hover, .archive .pagination .page-numbers.transparent-button:hover {
+        background-color: #ec7600;
+        color: #fff; }
+    .archive .pagination a.white-button, .archive .pagination .page-numbers.white-button {
+      background-color: #fff;
+      color: #ec7600; }
+      .archive .pagination a.white-button:hover, .archive .pagination .page-numbers.white-button:hover {
+        background-color: #ec7600;
+        color: #fff; }
+    .archive .pagination a.hover-white:hover, .archive .pagination .page-numbers.hover-white:hover {
+      background-color: #fff;
+      color: #ec7600; }
+    .archive .pagination a.hover-white-with-border:hover, .archive .pagination .page-numbers.hover-white-with-border:hover {
+      background-color: #fff;
+      color: #ec7600;
+      border-color: #ec7600; }
+    .archive .pagination a:hover, .archive .pagination a.current, .archive .pagination .page-numbers:hover, .archive .pagination .page-numbers.current {
+      color: #fff;
+      background-color: #ec7600; }
+.archive .pagination.navigation {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .archive .pagination.navigation h2 {
+    display: none; }
+  .archive .pagination.navigation .nav-links .page-numbers {
+    line-height: 11px; }
+    .archive .pagination.navigation .nav-links .page-numbers.prev, .archive .pagination.navigation .nav-links .page-numbers.next {
+      min-width: 120px; }
+.archive .pagination.mobile {
+  text-align: center;
+  display: none; }
+  .archive .pagination.mobile a {
+    font-size: 20px;
+    padding: 12px 12px 8px; }
+    .archive .pagination.mobile a + a {
+      margin-left: 15px; }
+
+/**
+ * Responsive
+ * ---------------
+ **/
+@media (min-width: 1024px) {
+  .archive .content {
+    padding: 90px 0; } }
+@media (max-width: 991px) {
+  .archive .products-grid [class*=" col-"]:nth-child(n+3) {
+    margin-top: 50px; } }
+@media (max-width: 767px) {
+  .archive .post-grid [class*="col-"] + [class*="col-"] {
+    margin-top: 50px; }
+  .archive .pagination.navigation {
+    display: none; }
+  .archive .pagination.mobile {
+    display: block; } }
+@media (max-width: 575px) {
+  .archive .products-grid [class*=" col-"] + [class*=" col-"] {
+    margin-top: 50px; }
+  .archive ul.filter-buttons {
+    flex-direction: column; }
+    .archive ul.filter-buttons li + li {
+      margin-top: 15px; } }
+@media (min-width: 576px) {
+  .archive ul.filter-buttons li {
+    margin-bottom: 50px; }
+    .archive ul.filter-buttons li + li {
+      margin-left: 15px; } }
+
+/*# sourceMappingURL=archive.css.map */

@@ -1,0 +1,23 @@
+@import "../mixins-master";
+
+.acf-slider-block{
+	@include slick-slider-properties(calc(50% - 46px));
+
+	.container{
+		padding: 0;
+	}
+
+	.slick-list{
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.slick-track{
+		@include flex($vertical-align: center);
+	}
+
+	img{
+		margin: 0 auto;
+		max-width: 200px;
+	}
+}

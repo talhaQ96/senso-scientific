@@ -1,0 +1,37 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-cards-slider .wrapper {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  display: block;
+  padding: 40px 30px; }
+  .acf-cards-slider .wrapper .icon-wrapper {
+    min-height: 160px; }
+    .acf-cards-slider .wrapper .icon-wrapper img {
+      margin: 0 auto;
+      max-height: 130px; }
+  .acf-cards-slider .wrapper.card-with-hover {
+    background-color: #f9fafa;
+    transition: all 300ms ease-in-out; }
+    .acf-cards-slider .wrapper.card-with-hover h4, .acf-cards-slider .wrapper.card-with-hover p {
+      transition: all 300ms ease-in-out; }
+    .acf-cards-slider .wrapper.card-with-hover:hover {
+      background-color: #3892df; }
+      .acf-cards-slider .wrapper.card-with-hover:hover h4, .acf-cards-slider .wrapper.card-with-hover:hover p {
+        color: #fff; }
+
+/*# sourceMappingURL=cards-slider.css.map */

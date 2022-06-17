@@ -1,0 +1,49 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.single-applications p + p {
+  margin-top: 30px; }
+.single-applications ul.list-items {
+  font-size: 1rem;
+  font-family: "Kumbh Sans";
+  font-weight: bold;
+  color: #2b4d6c; }
+  .single-applications ul.list-items li {
+    position: relative;
+    margin-left: 36px; }
+    .single-applications ul.list-items li:before {
+      content: "\f14a";
+      font-family: "Font Awesome 5 Free";
+      font-size: 22px;
+      line-height: 20px;
+      position: absolute;
+      left: -35px;
+      color: #ec7600; }
+  .single-applications ul.list-items li + li {
+    margin-top: 25px; }
+.single-applications .features .acf-expertise-block {
+  align-items: center; }
+  .single-applications .features .acf-expertise-block .img-wrap {
+    min-width: 140px; }
+    .single-applications .features .acf-expertise-block .img-wrap img {
+      max-width: 100px;
+      max-height: 130px; }
+
+@media (max-width: 1024px) {
+  .single-applications .features .acf-expertise-block .img-wrap {
+    min-width: initial;
+    min-height: 150px; } }
+
+/*# sourceMappingURL=application-single.css.map */

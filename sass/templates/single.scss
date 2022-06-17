@@ -1,0 +1,128 @@
+@import "../mixins-master";
+
+.single-post{
+	.attachment-post-thumbnail{
+		width: 100%;
+	}
+
+	.sharethis-inline-share-buttons#st-1{
+		display: flex;
+		margin-bottom: 24px;
+
+		.st-btn{
+			display: inline-flex !important;
+			align-items: center;
+			justify-content: center;
+			background-color: $c-orange;
+			width: 44px;
+    		height: 44px;
+    		border-radius: 50%;
+    		margin: 0;
+
+    		> img{
+    			position: initial;
+    			height: 24px;
+    			width: 24px;
+    		}
+
+    		& + .st-btn{
+    			margin: 0 0 0 15px;
+    		}
+		} 
+	}
+
+	.sec-blog{
+		padding-bottom: 30px;
+		
+		.blog-details{
+			position: relative;
+			margin: 40px 0;
+
+			p{ font-size: map-get($font-size-map, sm); }
+
+			ul.post-categories{
+				display: flex;
+				flex-wrap: wrap;
+				font-size: map-get($font-size-map, sm);
+				font-family: $font-alt;
+				font-weight: $font-weight-bold;
+				color: $c-orange;
+
+				li{
+					position: relative;
+
+					&:after{
+						content: ",";
+						position: relative;
+						left: 3px;
+					}
+
+					&:only-child:after,
+					&:last-child:after{
+						content: "";
+					}
+				}
+
+				li+li{
+					margin-left: 15px;
+				}
+			}
+		}
+
+		.blog-content{
+			.st-inline-share-buttons{
+				display: none !important;
+			}
+
+			> *{ margin-bottom: 30px; }
+
+			ul, ol{
+				list-style-type: disc;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding-left: 40px;
+	
+				li{
+					& > a{
+						font-weight: bold;
+						color: $c-brand; 
+					}
+				}
+			}
+	
+			ul{list-style-type: disc;}
+	
+			ol{list-style-type: decimal;}
+
+			blockquote{
+				border-left: 8px solid $c-orange;
+				padding-left: 30px;
+
+				p{
+					font-size: map-get($font-size-map, lg);
+					line-height: 28px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.single-post .sec-blog{
+		padding-bottom: 60px;
+	}
+}
+
+@media (min-width: 1366px){
+	.single-post{
+		.sharethis-inline-share-buttons#st-1{
+			flex-direction: column;
+			position: absolute;
+			left: -75px;
+
+			.st-btn + .st-btn{
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+}

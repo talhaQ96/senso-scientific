@@ -1,0 +1,11 @@
+@import "../mixins-master";
+
+.acf-brochure-block{
+	h2, p{
+		color: $c-white;
+	}
+
+	a.button{
+		margin-top: 35px;
+	}
+}

@@ -1,0 +1,68 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+
+$c-body-text:   #232c37;
+$c-text:        #2b4d6c;
+$c-brand:		#245f92;		
+$c-orange:      #ec7600;
+$c-orange-hover:#e88d32;
+$c-white:		#fff;
+$c-black:		#000;
+$c-gray-900:	#1A1A1A;
+$c-gray-800:	#333333;
+$c-gray-700:	#4D4D4D;
+$c-gray-600:	#666666;
+$c-gray-500:	#808080;
+$c-gray-400:	#999999;
+$c-gray-300:	#B3B3B3;
+$c-gray-200:	#CCCCCC;
+$c-gray-100:	#E6E6E6;
+$c-gray-50:		#F2F2F2;
+
+/**
+ * MAPS
+ */
+$font-size-map: (xs: 0.875rem, sm: 0.938rem, md: 1rem, lg: 1.125rem, xl: 1.25rem);
+$line-height-map: (xs: 16px, sm: 24px, md: 26px, lg: 32px, xl: 38px);
+
+/**
+ *	Define font related variables here
+ */
+
+$font-main:		'Open Sans';
+$font-alt:		'Kumbh Sans';
+
+$font-weight-bold: bold;
+
+$font:          $font-main;
+$h1-font: 		$font-alt;
+$h2-font: 		$font-alt;
+$h3-font: 		$font-alt;
+$h4-font: 		$font-alt;
+$h5-font: 		$font-alt;
+$h6-font: 		$font-alt;
+
+$font-size: 	1.6rem;
+$h1-font-size: 	3.125rem;
+$h2-font-size: 	1.75rem;
+$h3-font-size: 	1.5rem;
+$h4-font-size: 	1.125rem;
+$h5-font-size: 	1.125rem;
+$h6-font-size: 	0.938rem;
+
+$h1-font-size-sm:  2.813rem;
+
+/*
+	Defining Shadows
+ */
+$shadow-base: 0 1px 3px 0px rgba(0,0,0,0.1), 0 1px 2px 0px rgba(0,0,0,0.06);
+$shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+
+/**
+ * Transitions to use
+ */
+
+ $transition: all 300ms ease-in-out;

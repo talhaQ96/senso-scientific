@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;AAoBH;;GAEG;AAIH;;GAEG;AAyBH;;GAEG;AAMH;;GAEG;AC9DF,6CAAK;EACJ,KAAK,EDKI,IAAI;ACFd,4BAAQ;EACP,UAAU,EAAE,IAAI",
+"sources": ["../../../sass/_variables.scss","../../../sass/blocks/brochure.scss"],
+"names": [],
+"file": "brochure.css"
+}

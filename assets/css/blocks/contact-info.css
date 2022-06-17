@@ -1,0 +1,30 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+.acf-contact-block {
+  font-size: 1rem; }
+  .acf-contact-block ul.contact-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; }
+    .acf-contact-block ul.contact-info li a:hover {
+      color: #ec7600; }
+    .acf-contact-block ul.contact-info li + li {
+      margin-top: 15px; }
+  .acf-contact-block [class*="fa"] {
+    color: #ec7600;
+    width: 30px; }
+
+/*# sourceMappingURL=contact-info.css.map */

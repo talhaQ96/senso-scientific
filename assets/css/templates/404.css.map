@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,OAAO,EAAE,MAAM;EAEf,kBAAO;IACN,UAAU,EAAE,IAAI;;AAIlB,0BAA0B;EACzB,UAAU;IACT,OAAO,EAAE,MAAM",
+"sources": ["../../../sass/templates/404.scss"],
+"names": [],
+"file": "404.css"
+}

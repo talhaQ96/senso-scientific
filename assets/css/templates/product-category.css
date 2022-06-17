@@ -1,0 +1,71 @@
+/**
+ *	Colors should be prefixed with a c- to easily distinguish it's a color
+ */
+/**
+ * MAPS
+ */
+/**
+ *	Define font related variables here
+ */
+/*
+	Defining Shadows
+ */
+/**
+ * Transitions to use
+ */
+main.taxonomy .featured-image-banner {
+  background-image: url(../../images/blue-bg.png);
+  min-height: 300px; }
+  main.taxonomy .featured-image-banner .breadcrumbs {
+    color: #fff; }
+  main.taxonomy .featured-image-banner h1, main.taxonomy .featured-image-banner p {
+    color: #fff; }
+main.taxonomy .content {
+  padding: 60px 0; }
+  main.taxonomy .content .post-loop {
+    text-align: center; }
+    main.taxonomy .content .post-loop a {
+      background-color: #ec7600;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.938rem;
+      font-family: "Kumbh Sans";
+      line-height: 16px;
+      padding: 15px 15px 11px;
+      min-width: 165px;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      cursor: pointer; }
+      main.taxonomy .content .post-loop a.noradius-left {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
+      main.taxonomy .content .post-loop a.noradius-right {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      main.taxonomy .content .post-loop a.small {
+        font-size: 0.875rem;
+        padding: 10px 18px 7px;
+        min-width: initial;
+        color: #fff; }
+      main.taxonomy .content .post-loop a:hover {
+        color: #fff; }
+    main.taxonomy .content .post-loop [class^="col-"]:nth-child(n+4),
+    main.taxonomy .content .post-loop [class*=" col-"]:nth-child(n+4) {
+      margin-top: 50px; }
+
+@media (min-width: 1024px) {
+  main.taxonomy .content {
+    padding: 90px 0; } }
+@media (max-width: 991px) {
+  main.taxonomy .content .post-loop [class^="col-"]:nth-child(n+3),
+  main.taxonomy .content .post-loop [class*=" col-"]:nth-child(n+3) {
+    margin-top: 50px; } }
+@media (max-width: 575px) {
+  main.taxonomy .content .post-loop [class^="col-"] + [class^="col-"],
+  main.taxonomy .content .post-loop [class*=" col-"] + [class*=" col-"] {
+    margin-top: 50px; } }
+
+/*# sourceMappingURL=product-category.css.map */

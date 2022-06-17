@@ -1,0 +1,28 @@
+.acf-expertise-block {
+  display: flex; }
+  .acf-expertise-block .img-wrap {
+    min-width: 60px; }
+  .acf-expertise-block img {
+    max-width: 50px;
+    max-height: 50px; }
+  .acf-expertise-block a {
+    display: block; }
+
+.align-column-content-vertical .acf-expertise-block {
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
+  .align-column-content-vertical .acf-expertise-block .img-wrap {
+    min-width: initial;
+    min-height: 70px; }
+
+@media (max-width: 1024px) {
+  .acf-expertise-block {
+    text-align: center;
+    flex-direction: column;
+    align-items: center; }
+    .acf-expertise-block .img-wrap {
+      min-width: initial;
+      min-height: 70px; } }
+
+/*# sourceMappingURL=expertise.css.map */
